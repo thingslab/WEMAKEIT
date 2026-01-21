@@ -18,3 +18,7 @@ Get started:
 - See the Experiments folder for step-by-step activities.
 - Use the development branch for new content and feature work.
 - Open issues or contribute improvements via pull requests.
+
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY‑NC 4.0).
