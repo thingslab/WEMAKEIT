@@ -43,6 +43,32 @@ Components like resistors need to have their legs bent into 90° angles in order
 - Connect the other leg of the resistor to the anode (long leg) of the LED.
 - Connect the cathode (short leg) of the LED to the ground rail on the breadboard.
 
+## Soldering Subversion: Traffic Light PCB Preparation (Optional)
+
+To prepare for future experiments, such as the Traffic Light System (Experiment 17), you can solder a small PCB with three LED positions. This subversion introduces basic soldering skills and sets up reusable hardware.
+
+### Additional Parts Needed for Subversion
+
+- 1x Small PCB with three LED footprints (red, yellow, green LEDs)
+- 3x LEDs (preferably red, yellow, green for traffic light simulation)
+- 3x 330Ω Resistors (one per LED)
+- Soldering iron, solder, and basic soldering tools
+
+### Soldering Instructions
+
+1. Identify the PCB: It has three LED footprints, each with holes for the LED legs and resistor pads.
+2. Solder the LEDs: Insert each LED into its footprint (observe polarity: long leg anode, short leg cathode). Bend the legs and solder them in place.
+3. Solder the Resistors: Connect a 330Ω resistor in series with each LED's anode.
+4. Note: For this experiment, only solder and connect the first LED (e.g., red). The other two LED positions are prepared for future use in the Traffic Light experiment but do not need to be connected yet.
+
+### Wiring for Subversion
+
+- Connect the ESP32 DevKit GND to the PCB ground.
+- Connect GPIO 13 to the resistor of the first LED on the PCB.
+- The PCB can be plugged into the breadboard or connected directly to the ESP32 headers.
+
+This subversion teaches through-hole soldering and component assembly, building toward more complex projects.
+
 ## Open Your First Sketch
 
 Open up the Arduino IDE software on your computer. Coding in the Arduino language will control your circuit. Ensure you have the ESP32 board support installed.
