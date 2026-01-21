@@ -5,14 +5,14 @@
 LEDs are small, powerful lights that are used in many different applications. To start off, we will work on blinking an LED, the Hello World of microcontrollers. That's right - it's as simple as turning a light on and off. It might not seem like much, but establishing this important baseline will give you a solid foundation as we work toward more complex experiments.
 
 **Learn:** Digital output, timing (delay)  
-**Platform:** Breadboard / ESP32 DevKit  
+**Platform:** Breadboard / WEMAKEIT
 **Output:** Single LED blink circuit
 
 ## Parts Needed
 
 You will need the following parts:
 
-- 1x ESP32 DevKit + USB cable
+- 1x WEMAKEIT + USB cable
 - 1x Breadboard
 - 1x LED
 - 1x 330Ω Resistor
@@ -38,8 +38,8 @@ Components like resistors need to have their legs bent into 90° angles in order
 
 ### Wiring Diagram
 
-- Connect the ESP32 DevKit GND to the breadboard ground rail.
-- Connect one leg of the 330Ω resistor to GPIO 13 on the ESP32.
+- Connect the WEMAKEIT GND to the breadboard ground rail.
+- Connect one leg of the 330Ω resistor to GPIO 13 on the WEMAKEIT.
 - Connect the other leg of the resistor to the anode (long leg) of the LED.
 - Connect the cathode (short leg) of the LED to the ground rail on the breadboard.
 
@@ -63,21 +63,21 @@ To prepare for future experiments, such as the Traffic Light System (Experiment 
 
 ### Wiring for Subversion
 
-- Connect the ESP32 DevKit GND to the PCB ground.
+- Connect the WEMAKEIT GND to the PCB ground.
 - Connect GPIO 13 to the resistor of the first LED on the PCB.
-- The PCB can be plugged into the breadboard or connected directly to the ESP32 headers.
+- The PCB can be plugged into the breadboard or connected directly to the WEMAKEIT headers.
 
 This subversion teaches through-hole soldering and component assembly, building toward more complex projects.
 
 ## Open Your First Sketch
 
-Open up the Arduino IDE software on your computer. Coding in the Arduino language will control your circuit. Ensure you have the ESP32 board support installed.
+Open up the Arduino IDE software on your computer. Coding in the Arduino language will control your circuit. Ensure you have the WEMAKEIT board support installed.
 
-Copy and paste the following code into the Arduino IDE. Select the ESP32 DevKit board, choose the correct port, and hit upload!
+Copy and paste the following code into the Arduino IDE. Select the WEMAKEIT board, choose the correct port, and hit upload!
 
 ```cpp
 /*
- * ESP32 Blinking LED Example
+ * WEMAKEIT Blinking LED Example
  * Turn an LED on for one second, off for one second, and repeat forever.
  */
 
@@ -106,7 +106,7 @@ void loop() {
 
 `pinMode(13, OUTPUT);`
 
-Before you can use one of the ESP32's pins, you need to tell it whether it is an INPUT or OUTPUT. We use a built-in function called `pinMode()` to do this.
+Before you can use one of the WEMAKEIT's pins, you need to tell it whether it is an INPUT or OUTPUT. We use a built-in function called `pinMode()` to do this.
 
 `digitalWrite(13, HIGH);`
 
@@ -128,9 +128,9 @@ LEDs will only work in one direction. Try taking it out of your breadboard, turn
 
 ### Program Not Uploading
 
-This happens sometimes; the most likely cause is a confused serial port. You can change this in Tools > Serial Port > in the Arduino IDE. Also, ensure the ESP32 board is selected in Tools > Board.
+This happens sometimes; the most likely cause is a confused serial port. You can change this in Tools > Serial Port > in the Arduino IDE. Also, ensure the WEMAKEIT board is selected in Tools > Board.
 
 ### Still No Success?
 
-A broken circuit is no fun. Check your wiring, ensure the ESP32 is powered correctly, and verify the code.</content>
+A broken circuit is no fun. Check your wiring, ensure the WEMAKEIT is powered correctly, and verify the code.</content>
 <parameter name="path">Experiments/01. Blinking LED/README.md
